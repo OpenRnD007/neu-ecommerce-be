@@ -8,11 +8,16 @@ import { NextFunction } from 'express';
  * @extends {Document}
  */
 export interface ICartModel extends Document {
-    cid: number;
-    title: string;
-    price: number;
-    qty: number;
-
+    cid: number,
+    discount: number,
+    discountCode: string,
+    products: [{
+        title: string,
+        price: number,
+        qty: number,
+    }],
+    subtotal: number,
+    total: number,
     createdat?: Date,
     updatedat?: Date,
     isdeleted?: boolean
@@ -25,6 +30,10 @@ const CartSchema: Schema = new Schema({
         price: Number,
         qty: Number,
     }],
+    discount: Number,
+    discountCode: String,
+    subtotal: Number,
+    total: Number,
     createdat: {
         type: Date,
         default: new Date()
