@@ -9,7 +9,7 @@
     "prestart": "npm run prebuild && tsc",
     "local": "ts-node --files src/index.ts",
     "nmon": "nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"npm run prebuild && ts-node --files src/index.ts\"",
-    "start": "node .",
+    "start": "tsc && node .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
