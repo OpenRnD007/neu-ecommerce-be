@@ -42,6 +42,9 @@ curl -XGET 'https://neu-ecommerce-be.onrender.com/cart/allcoupon/1'
 
 curl -XGET 'https://neu-ecommerce-be.onrender.com/cart/coupon/1'
 ```
+## Demo Video
+[demo.webm](https://user-images.githubusercontent.com/107931489/221359044-df27b049-114b-45b8-974f-37557d0f6fc3.webm)
+
 
 ## License
 
